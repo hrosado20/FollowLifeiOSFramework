@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 public class Role {
     public var id: Int
@@ -23,5 +24,20 @@ public class Role {
         self.id = id
         self.name = name
         self.shortName = shortName
+    }
+    
+    public init(from jsonObject: JSON){
+        self.id = jsonObject["id"].intValue
+        self.name = jsonObject["name"].stringValue
+        self.shortName = jsonObject["shortName"].stringValue
+    }
+    
+    public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [Role] {
+        var roles = [Role]()
+        let count = jsonArray.count
+        for i in 0..<count {
+            roles.append(Role.init(from: jsonArray[i]))
+        }
+        return roles
     }
 }
