@@ -7,6 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4000D8C620B53A1F0061BBC9 /* FollowLifeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7220B452BC00D20C7F /* FollowLifeApi.swift */; };
+		4000D8D720B53A200061BBC9 /* FollowLifeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7220B452BC00D20C7F /* FollowLifeApi.swift */; };
+		4000D8D820B53A240061BBC9 /* LogoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7420B45BF600D20C7F /* LogoApi.swift */; };
+		4000D8D920B53A250061BBC9 /* LogoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7420B45BF600D20C7F /* LogoApi.swift */; };
+		4000D8DB20B53B3F0061BBC9 /* DoctorMedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8DA20B53B3F0061BBC9 /* DoctorMedicalSpeciality.swift */; };
+		4000D8DD20B53FE90061BBC9 /* MedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8DC20B53FE90061BBC9 /* MedicalSpeciality.swift */; };
+		4000D8DF20B542270061BBC9 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8DE20B542270061BBC9 /* District.swift */; };
+		4000D8E120B6133C0061BBC9 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8E020B6133C0061BBC9 /* Prescription.swift */; };
+		4000D8E220B6133C0061BBC9 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8E020B6133C0061BBC9 /* Prescription.swift */; };
+		4000D8E320B6133C0061BBC9 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8E020B6133C0061BBC9 /* Prescription.swift */; };
+		4000D8E520B614E90061BBC9 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8E420B614E90061BBC9 /* ItemType.swift */; };
+		4000D8E620B614E90061BBC9 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8E420B614E90061BBC9 /* ItemType.swift */; };
+		4000D8E720B614E90061BBC9 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8E420B614E90061BBC9 /* ItemType.swift */; };
+		4000D8E920B6157F0061BBC9 /* UnitOfMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8E820B6157F0061BBC9 /* UnitOfMeasurement.swift */; };
+		4000D8EA20B6157F0061BBC9 /* UnitOfMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8E820B6157F0061BBC9 /* UnitOfMeasurement.swift */; };
+		4000D8EB20B6157F0061BBC9 /* UnitOfMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8E820B6157F0061BBC9 /* UnitOfMeasurement.swift */; };
+		4000D8ED20B616560061BBC9 /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8EC20B616560061BBC9 /* IndicatorType.swift */; };
+		4000D8EE20B616560061BBC9 /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8EC20B616560061BBC9 /* IndicatorType.swift */; };
+		4000D8EF20B616560061BBC9 /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8EC20B616560061BBC9 /* IndicatorType.swift */; };
+		4000D8F120B617D90061BBC9 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8F020B617D90061BBC9 /* Plan.swift */; };
+		4000D8F220B617D90061BBC9 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8F020B617D90061BBC9 /* Plan.swift */; };
+		4000D8F320B617D90061BBC9 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8F020B617D90061BBC9 /* Plan.swift */; };
+		4000D8F520B61A6E0061BBC9 /* IndicatorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8F420B61A6E0061BBC9 /* IndicatorEntry.swift */; };
+		4000D8F620B61A6E0061BBC9 /* IndicatorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8F420B61A6E0061BBC9 /* IndicatorEntry.swift */; };
+		4000D8F720B61A6E0061BBC9 /* IndicatorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8F420B61A6E0061BBC9 /* IndicatorEntry.swift */; };
+		4000D8F920B61E3A0061BBC9 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8F820B61E3A0061BBC9 /* Indicator.swift */; };
+		4000D8FA20B61E3A0061BBC9 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8F820B61E3A0061BBC9 /* Indicator.swift */; };
+		4000D8FB20B61E3A0061BBC9 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8F820B61E3A0061BBC9 /* Indicator.swift */; };
+		4000D8FD20B61F070061BBC9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8FC20B61F070061BBC9 /* Address.swift */; };
+		4000D8FE20B61F070061BBC9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8FC20B61F070061BBC9 /* Address.swift */; };
+		4000D8FF20B61F070061BBC9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D8FC20B61F070061BBC9 /* Address.swift */; };
+		4000D90120B624800061BBC9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D90020B624800061BBC9 /* Item.swift */; };
+		4000D90220B624800061BBC9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D90020B624800061BBC9 /* Item.swift */; };
+		4000D90320B624800061BBC9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D90020B624800061BBC9 /* Item.swift */; };
 		406C5C5C20B4515800D20C7F /* FollowLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C5C5220B4515800D20C7F /* FollowLife.framework */; };
 		406C5C6120B4515800D20C7F /* FollowLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C6020B4515800D20C7F /* FollowLifeTests.swift */; };
 		406C5C6320B4515800D20C7F /* FollowLife.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C5C5520B4515800D20C7F /* FollowLife.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,6 +55,26 @@
 		406C5C8320B46B1700D20C7F /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C8220B46B1700D20C7F /* Appointment.swift */; };
 		406C5CB920B4997A00D20C7F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C5CAB20B4996C00D20C7F /* Alamofire.framework */; };
 		406C5CBA20B4997F00D20C7F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C5C9220B4996200D20C7F /* SwiftyJSON.framework */; };
+		406C5CCC20B4E29700D20C7F /* FollowLifeWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C5CCA20B4E29700D20C7F /* FollowLifeWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		406C5CD020B4E2B400D20C7F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C5C9A20B4996200D20C7F /* SwiftyJSON.framework */; };
+		406C5CD120B4E2B900D20C7F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C5CB720B4996C00D20C7F /* Alamofire.framework */; };
+		406C5CF920B4E5AE00D20C7F /* FollowLifeTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C5CF720B4E5AD00D20C7F /* FollowLifeTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		406C5CFD20B4E5BE00D20C7F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C5CB320B4996C00D20C7F /* Alamofire.framework */; };
+		406C5CFE20B4E5C200D20C7F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406C5C9C20B4996200D20C7F /* SwiftyJSON.framework */; };
+		406C5CFF20B4E5D300D20C7F /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7620B45C2300D20C7F /* Doctor.swift */; };
+		406C5D0020B4E5D400D20C7F /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7620B45C2300D20C7F /* Doctor.swift */; };
+		406C5D0120B4E5D700D20C7F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7820B45CF000D20C7F /* User.swift */; };
+		406C5D0220B4E5D800D20C7F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7820B45CF000D20C7F /* User.swift */; };
+		406C5D0320B4E5DB00D20C7F /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7A20B4642D00D20C7F /* Patient.swift */; };
+		406C5D0420B4E5DC00D20C7F /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7A20B4642D00D20C7F /* Patient.swift */; };
+		406C5D0520B4E5DF00D20C7F /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7C20B467F800D20C7F /* Role.swift */; };
+		406C5D0620B4E5E000D20C7F /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7C20B467F800D20C7F /* Role.swift */; };
+		406C5D0720B4E5E300D20C7F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7E20B4688800D20C7F /* Device.swift */; };
+		406C5D0820B4E5E300D20C7F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C7E20B4688800D20C7F /* Device.swift */; };
+		406C5D0920B4E5E800D20C7F /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C8020B469E000D20C7F /* Membership.swift */; };
+		406C5D0A20B4E5E900D20C7F /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C8020B469E000D20C7F /* Membership.swift */; };
+		406C5D0B20B4E5EC00D20C7F /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C8220B46B1700D20C7F /* Appointment.swift */; };
+		406C5D0C20B4E5EC00D20C7F /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C5C8220B46B1700D20C7F /* Appointment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +186,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4000D8DA20B53B3F0061BBC9 /* DoctorMedicalSpeciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorMedicalSpeciality.swift; sourceTree = "<group>"; };
+		4000D8DC20B53FE90061BBC9 /* MedicalSpeciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSpeciality.swift; sourceTree = "<group>"; };
+		4000D8DE20B542270061BBC9 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		4000D8E020B6133C0061BBC9 /* Prescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
+		4000D8E420B614E90061BBC9 /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
+		4000D8E820B6157F0061BBC9 /* UnitOfMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitOfMeasurement.swift; sourceTree = "<group>"; };
+		4000D8EC20B616560061BBC9 /* IndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorType.swift; sourceTree = "<group>"; };
+		4000D8F020B617D90061BBC9 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		4000D8F420B61A6E0061BBC9 /* IndicatorEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorEntry.swift; sourceTree = "<group>"; };
+		4000D8F820B61E3A0061BBC9 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		4000D8FC20B61F070061BBC9 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		4000D90020B624800061BBC9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		406C5C5220B4515800D20C7F /* FollowLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FollowLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		406C5C5520B4515800D20C7F /* FollowLife.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowLife.h; sourceTree = "<group>"; };
 		406C5C5620B4515800D20C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +215,12 @@
 		406C5C8220B46B1700D20C7F /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		406C5C8620B4996200D20C7F /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		406C5C9F20B4996C00D20C7F /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		406C5CC820B4E29700D20C7F /* FollowLifeWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FollowLifeWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		406C5CCA20B4E29700D20C7F /* FollowLifeWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowLifeWatch.h; sourceTree = "<group>"; };
+		406C5CCB20B4E29700D20C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		406C5CF520B4E5AD00D20C7F /* FollowLifeTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FollowLifeTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		406C5CF720B4E5AD00D20C7F /* FollowLifeTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowLifeTV.h; sourceTree = "<group>"; };
+		406C5CF820B4E5AE00D20C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +241,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		406C5CC420B4E29700D20C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406C5CD120B4E2B900D20C7F /* Alamofire.framework in Frameworks */,
+				406C5CD020B4E2B400D20C7F /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406C5CF120B4E5AD00D20C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406C5CFE20B4E5C200D20C7F /* SwiftyJSON.framework in Frameworks */,
+				406C5CFD20B4E5BE00D20C7F /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -179,6 +269,8 @@
 				406C5C8620B4996200D20C7F /* SwiftyJSON.xcodeproj */,
 				406C5C5420B4515800D20C7F /* FollowLife */,
 				406C5C5F20B4515800D20C7F /* FollowLifeTests */,
+				406C5CC920B4E29700D20C7F /* FollowLifeWatch */,
+				406C5CF620B4E5AD00D20C7F /* FollowLifeTV */,
 				406C5C5320B4515800D20C7F /* Products */,
 				406C5CB820B4997A00D20C7F /* Frameworks */,
 			);
@@ -189,6 +281,8 @@
 			children = (
 				406C5C5220B4515800D20C7F /* FollowLife.framework */,
 				406C5C5B20B4515800D20C7F /* FollowLifeTests.xctest */,
+				406C5CC820B4E29700D20C7F /* FollowLifeWatch.framework */,
+				406C5CF520B4E5AD00D20C7F /* FollowLifeTV.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +317,18 @@
 				406C5C7E20B4688800D20C7F /* Device.swift */,
 				406C5C8020B469E000D20C7F /* Membership.swift */,
 				406C5C8220B46B1700D20C7F /* Appointment.swift */,
+				4000D8DA20B53B3F0061BBC9 /* DoctorMedicalSpeciality.swift */,
+				4000D8DC20B53FE90061BBC9 /* MedicalSpeciality.swift */,
+				4000D8DE20B542270061BBC9 /* District.swift */,
+				4000D8E020B6133C0061BBC9 /* Prescription.swift */,
+				4000D8E420B614E90061BBC9 /* ItemType.swift */,
+				4000D8E820B6157F0061BBC9 /* UnitOfMeasurement.swift */,
+				4000D8EC20B616560061BBC9 /* IndicatorType.swift */,
+				4000D8F020B617D90061BBC9 /* Plan.swift */,
+				4000D8F420B61A6E0061BBC9 /* IndicatorEntry.swift */,
+				4000D8F820B61E3A0061BBC9 /* Indicator.swift */,
+				4000D8FC20B61F070061BBC9 /* Address.swift */,
+				4000D90020B624800061BBC9 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +377,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		406C5CC920B4E29700D20C7F /* FollowLifeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				406C5CCA20B4E29700D20C7F /* FollowLifeWatch.h */,
+				406C5CCB20B4E29700D20C7F /* Info.plist */,
+			);
+			path = FollowLifeWatch;
+			sourceTree = "<group>";
+		};
+		406C5CF620B4E5AD00D20C7F /* FollowLifeTV */ = {
+			isa = PBXGroup;
+			children = (
+				406C5CF720B4E5AD00D20C7F /* FollowLifeTV.h */,
+				406C5CF820B4E5AE00D20C7F /* Info.plist */,
+			);
+			path = FollowLifeTV;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -279,6 +403,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				406C5C6320B4515800D20C7F /* FollowLife.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406C5CC520B4E29700D20C7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406C5CCC20B4E29700D20C7F /* FollowLifeWatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406C5CF220B4E5AD00D20C7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406C5CF920B4E5AE00D20C7F /* FollowLifeTV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +461,42 @@
 			productReference = 406C5C5B20B4515800D20C7F /* FollowLifeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		406C5CC720B4E29700D20C7F /* FollowLifeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406C5CCD20B4E29700D20C7F /* Build configuration list for PBXNativeTarget "FollowLifeWatch" */;
+			buildPhases = (
+				406C5CC320B4E29700D20C7F /* Sources */,
+				406C5CC420B4E29700D20C7F /* Frameworks */,
+				406C5CC520B4E29700D20C7F /* Headers */,
+				406C5CC620B4E29700D20C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FollowLifeWatch;
+			productName = FollowLifeWatch;
+			productReference = 406C5CC820B4E29700D20C7F /* FollowLifeWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		406C5CF420B4E5AD00D20C7F /* FollowLifeTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 406C5CFA20B4E5AE00D20C7F /* Build configuration list for PBXNativeTarget "FollowLifeTV" */;
+			buildPhases = (
+				406C5CF020B4E5AD00D20C7F /* Sources */,
+				406C5CF120B4E5AD00D20C7F /* Frameworks */,
+				406C5CF220B4E5AD00D20C7F /* Headers */,
+				406C5CF320B4E5AD00D20C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FollowLifeTV;
+			productName = FollowLifeTV;
+			productReference = 406C5CF520B4E5AD00D20C7F /* FollowLifeTV.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -336,6 +512,12 @@
 						LastSwiftMigration = 0930;
 					};
 					406C5C5A20B4515800D20C7F = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					406C5CC720B4E29700D20C7F = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					406C5CF420B4E5AD00D20C7F = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
 				};
@@ -364,6 +546,8 @@
 			targets = (
 				406C5C5120B4515800D20C7F /* FollowLife */,
 				406C5C5A20B4515800D20C7F /* FollowLifeTests */,
+				406C5CC720B4E29700D20C7F /* FollowLifeWatch */,
+				406C5CF420B4E5AD00D20C7F /* FollowLifeTV */,
 			);
 		};
 /* End PBXProject section */
@@ -484,6 +668,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		406C5CC620B4E29700D20C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406C5CF320B4E5AD00D20C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -491,15 +689,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4000D8E520B614E90061BBC9 /* ItemType.swift in Sources */,
 				406C5C7920B45CF000D20C7F /* User.swift in Sources */,
+				4000D8F520B61A6E0061BBC9 /* IndicatorEntry.swift in Sources */,
 				406C5C7320B452BC00D20C7F /* FollowLifeApi.swift in Sources */,
+				4000D90120B624800061BBC9 /* Item.swift in Sources */,
+				4000D8E920B6157F0061BBC9 /* UnitOfMeasurement.swift in Sources */,
+				4000D8F120B617D90061BBC9 /* Plan.swift in Sources */,
 				406C5C7520B45BF600D20C7F /* LogoApi.swift in Sources */,
 				406C5C8320B46B1700D20C7F /* Appointment.swift in Sources */,
 				406C5C7720B45C2300D20C7F /* Doctor.swift in Sources */,
 				406C5C7B20B4642D00D20C7F /* Patient.swift in Sources */,
+				4000D8F920B61E3A0061BBC9 /* Indicator.swift in Sources */,
 				406C5C7F20B4688800D20C7F /* Device.swift in Sources */,
+				4000D8E120B6133C0061BBC9 /* Prescription.swift in Sources */,
+				4000D8DF20B542270061BBC9 /* District.swift in Sources */,
+				4000D8FD20B61F070061BBC9 /* Address.swift in Sources */,
 				406C5C7D20B467F800D20C7F /* Role.swift in Sources */,
 				406C5C8120B469E000D20C7F /* Membership.swift in Sources */,
+				4000D8ED20B616560061BBC9 /* IndicatorType.swift in Sources */,
+				4000D8DB20B53B3F0061BBC9 /* DoctorMedicalSpeciality.swift in Sources */,
+				4000D8DD20B53FE90061BBC9 /* MedicalSpeciality.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +718,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				406C5C6120B4515800D20C7F /* FollowLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406C5CC320B4E29700D20C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4000D8D820B53A240061BBC9 /* LogoApi.swift in Sources */,
+				406C5D0120B4E5D700D20C7F /* User.swift in Sources */,
+				4000D8F220B617D90061BBC9 /* Plan.swift in Sources */,
+				406C5CFF20B4E5D300D20C7F /* Doctor.swift in Sources */,
+				406C5D0320B4E5DB00D20C7F /* Patient.swift in Sources */,
+				4000D8EE20B616560061BBC9 /* IndicatorType.swift in Sources */,
+				4000D8C620B53A1F0061BBC9 /* FollowLifeApi.swift in Sources */,
+				4000D8FA20B61E3A0061BBC9 /* Indicator.swift in Sources */,
+				4000D8E220B6133C0061BBC9 /* Prescription.swift in Sources */,
+				4000D8E620B614E90061BBC9 /* ItemType.swift in Sources */,
+				4000D90220B624800061BBC9 /* Item.swift in Sources */,
+				406C5D0520B4E5DF00D20C7F /* Role.swift in Sources */,
+				406C5D0720B4E5E300D20C7F /* Device.swift in Sources */,
+				4000D8FE20B61F070061BBC9 /* Address.swift in Sources */,
+				4000D8F620B61A6E0061BBC9 /* IndicatorEntry.swift in Sources */,
+				4000D8EA20B6157F0061BBC9 /* UnitOfMeasurement.swift in Sources */,
+				406C5D0B20B4E5EC00D20C7F /* Appointment.swift in Sources */,
+				406C5D0920B4E5E800D20C7F /* Membership.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406C5CF020B4E5AD00D20C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4000D8D920B53A250061BBC9 /* LogoApi.swift in Sources */,
+				406C5D0220B4E5D800D20C7F /* User.swift in Sources */,
+				4000D8F320B617D90061BBC9 /* Plan.swift in Sources */,
+				406C5D0020B4E5D400D20C7F /* Doctor.swift in Sources */,
+				406C5D0420B4E5DC00D20C7F /* Patient.swift in Sources */,
+				4000D8EF20B616560061BBC9 /* IndicatorType.swift in Sources */,
+				4000D8D720B53A200061BBC9 /* FollowLifeApi.swift in Sources */,
+				4000D8FB20B61E3A0061BBC9 /* Indicator.swift in Sources */,
+				4000D8E320B6133C0061BBC9 /* Prescription.swift in Sources */,
+				4000D8E720B614E90061BBC9 /* ItemType.swift in Sources */,
+				4000D90320B624800061BBC9 /* Item.swift in Sources */,
+				406C5D0620B4E5E000D20C7F /* Role.swift in Sources */,
+				406C5D0820B4E5E300D20C7F /* Device.swift in Sources */,
+				4000D8FF20B61F070061BBC9 /* Address.swift in Sources */,
+				4000D8F720B61A6E0061BBC9 /* IndicatorEntry.swift in Sources */,
+				4000D8EB20B6157F0061BBC9 /* UnitOfMeasurement.swift in Sources */,
+				406C5D0C20B4E5EC00D20C7F /* Appointment.swift in Sources */,
+				406C5D0A20B4E5E900D20C7F /* Membership.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +993,116 @@
 			};
 			name = Release;
 		};
+		406C5CCE20B4E29700D20C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8468U436K8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeWatch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		406C5CCF20B4E29700D20C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8468U436K8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeWatch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		406C5CFB20B4E5AE00D20C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8468U436K8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeTV;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Debug;
+		};
+		406C5CFC20B4E5AE00D20C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8468U436K8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeTV;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -759,6 +1129,24 @@
 			buildConfigurations = (
 				406C5C6A20B4515800D20C7F /* Debug */,
 				406C5C6B20B4515800D20C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		406C5CCD20B4E29700D20C7F /* Build configuration list for PBXNativeTarget "FollowLifeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406C5CCE20B4E29700D20C7F /* Debug */,
+				406C5CCF20B4E29700D20C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		406C5CFA20B4E5AE00D20C7F /* Build configuration list for PBXNativeTarget "FollowLifeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406C5CFB20B4E5AE00D20C7F /* Debug */,
+				406C5CFC20B4E5AE00D20C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
