@@ -4,20 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FollowLife.xcscheme</key>
+		<key>FollowLifeFramework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>0</integer>
 		</dict>
-		<key>FollowLifeTV.xcscheme</key>
+		<key>FollowLifeTVFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>FollowLifeWatchFramework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>11</integer>
-		</dict>
-		<key>FollowLifeWatch.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
 		</dict>
 	</dict>
 </dict>
