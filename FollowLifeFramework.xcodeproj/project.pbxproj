@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4009375920B9AC6700BF359A /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4009375820B9AC6700BF359A /* Preference.swift */; };
+		4009375A20B9AC6700BF359A /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4009375820B9AC6700BF359A /* Preference.swift */; };
+		4009375B20B9AC6700BF359A /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4009375820B9AC6700BF359A /* Preference.swift */; };
 		40DB0BF420B91CF200A3AB2D /* FollowLifeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB0BF220B91CF200A3AB2D /* FollowLifeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40DB0C0F20B91D5C00A3AB2D /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFC20B91D5B00A3AB2D /* Membership.swift */; };
 		40DB0C1020B91D5C00A3AB2D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFD20B91D5B00A3AB2D /* Patient.swift */; };
@@ -183,6 +186,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4009375820B9AC6700BF359A /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
 		40DB0BEF20B91CF200A3AB2D /* FollowLifeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FollowLifeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DB0BF220B91CF200A3AB2D /* FollowLifeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowLifeFramework.h; sourceTree = "<group>"; };
 		40DB0BF320B91CF200A3AB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -248,6 +252,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4009374720B9AC0E00BF359A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4009375820B9AC6700BF359A /* Preference.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		40DB0BE520B91CF200A3AB2D = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +286,7 @@
 		40DB0BF120B91CF200A3AB2D /* FollowLifeFramework */ = {
 			isa = PBXGroup;
 			children = (
+				4009374720B9AC0E00BF359A /* Utils */,
 				40DB0BFB20B91D3800A3AB2D /* Model */,
 				40DB0BFA20B91D3100A3AB2D /* Network */,
 				40DB0BF220B91CF200A3AB2D /* FollowLifeFramework.h */,
@@ -643,6 +656,7 @@
 				40DB0C1420B91D5C00A3AB2D /* User.swift in Sources */,
 				40DB0C1A20B91D5C00A3AB2D /* MedicalSpeciality.swift in Sources */,
 				40DB0C1F20B91D5C00A3AB2D /* IndicatorType.swift in Sources */,
+				4009375920B9AC6700BF359A /* Preference.swift in Sources */,
 				40DB0C1320B91D5C00A3AB2D /* ItemType.swift in Sources */,
 				40DB0C0F20B91D5C00A3AB2D /* Membership.swift in Sources */,
 				40DB0C1920B91D5C00A3AB2D /* UnitOfMeasurement.swift in Sources */,
@@ -671,6 +685,7 @@
 				40DB0C9020B91F3200A3AB2D /* MedicalSpeciality.swift in Sources */,
 				40DB0C8220B91F0F00A3AB2D /* Doctor.swift in Sources */,
 				40DB0C9220B91F3800A3AB2D /* Membership.swift in Sources */,
+				4009375A20B9AC6700BF359A /* Preference.swift in Sources */,
 				40DB0C7920B91EEB00A3AB2D /* Address.swift in Sources */,
 				40DB0C8E20B91F2D00A3AB2D /* ItemType.swift in Sources */,
 				40DB0C8420B91F1500A3AB2D /* DoctorMedicalSpeciality.swift in Sources */,
@@ -699,6 +714,7 @@
 				40DB0C9120B91F3300A3AB2D /* MedicalSpeciality.swift in Sources */,
 				40DB0C8320B91F1000A3AB2D /* Doctor.swift in Sources */,
 				40DB0C9320B91F3800A3AB2D /* Membership.swift in Sources */,
+				4009375B20B9AC6700BF359A /* Preference.swift in Sources */,
 				40DB0C7A20B91EEC00A3AB2D /* Address.swift in Sources */,
 				40DB0C8F20B91F2E00A3AB2D /* ItemType.swift in Sources */,
 				40DB0C8520B91F1500A3AB2D /* DoctorMedicalSpeciality.swift in Sources */,
