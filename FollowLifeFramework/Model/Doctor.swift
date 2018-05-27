@@ -36,7 +36,7 @@ public class Doctor {
         self.addressId = 0
     }
     
-    public init(id: Int, userId: Int, planId: Int, status: String, createdAt: Date, medicIdentification: String, updatedAt: Date, addressId: Int) {
+    public init(id: Int, userId: Int, planId: Int, status: String, createdAt: Date, medicIdentification: String?, updatedAt: Date?, addressId: Int?) {
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         self.dateFormatter.timeStyle = .medium
@@ -47,12 +47,12 @@ public class Doctor {
         self.planId = planId
         self.status = status
         self.createdAt = dateFormatter.string(from: createdAt)
-        self.medicIdentification = medicIdentification
-        self.updatedAt = dateFormatter.string(from: updatedAt)
-        self.addressId = addressId
+        self.medicIdentification = (medicIdentification == nil) ? "" : medicIdentification!
+        self.updatedAt = (updatedAt == nil) ? dateFormatter.string(from: Date()) : dateFormatter.string(from: updatedAt!)
+        self.addressId = (addressId == nil) ? 0 : addressId!
     }
     
-    public init(id: Int, userId: Int, planId: Int, status: String, createdAt: String, medicIdentification: String, updatedAt: String, addressId: Int) {
+    public init(id: Int, userId: Int, planId: Int, status: String, createdAt: String, medicIdentification: String?, updatedAt: String?, addressId: Int?) {
         self.dateFormatter = DateFormatter()
         
         self.id = id
@@ -60,9 +60,9 @@ public class Doctor {
         self.planId = planId
         self.status = status
         self.createdAt = createdAt
-        self.medicIdentification = medicIdentification
-        self.updatedAt = updatedAt
-        self.addressId = addressId
+        self.medicIdentification = (medicIdentification == nil) ? "" : medicIdentification!
+        self.updatedAt = (updatedAt == nil) ? dateFormatter.string(from: Date()) : updatedAt!
+        self.addressId = (addressId == nil) ? 0 : addressId!
     }
     
     public init(from jsonObject: JSON){

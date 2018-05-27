@@ -26,13 +26,13 @@ public class Plan {
         self.price = Float("0.0000")!
     }
     
-    public init(id: Int, code: String, name: String, description: String, acceptedPatients: Int, price: Float) {
+    public init(id: Int, code: String, name: String, description: String?, acceptedPatients: Int?, price: Float?) {
         self.id = id
         self.code = code
         self.name = name
-        self.description = description
-        self.acceptedPatients = acceptedPatients
-        self.price = price
+        self.description = (description == nil) ? "" : description!
+        self.acceptedPatients = (acceptedPatients == nil) ? 0 : acceptedPatients!
+        self.price = (price == nil) ? Float("0.0000")! : price!
     }
     
     public init(from jsonObject: JSON){

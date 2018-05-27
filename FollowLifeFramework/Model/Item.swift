@@ -36,7 +36,7 @@ public class Item {
         self.createdAt = dateFormatter.string(from: Date())
     }
     
-    public init(id: Int, prescriptionId: Int, itemTypeId: Int, frequency: String, quantity: Int, durationInDays: Int, description: String, createdAt: Date) {
+    public init(id: Int, prescriptionId: Int, itemTypeId: Int?, frequency: String?, quantity: Int?, durationInDays: Int?, description: String?, createdAt: Date) {
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         self.dateFormatter.timeStyle = .medium
@@ -44,24 +44,27 @@ public class Item {
         
         self.id = id
         self.prescriptionId = prescriptionId
-        self.itemTypeId = itemTypeId
-        self.frequency = frequency
-        self.quantity = quantity
-        self.durationInDays = durationInDays
-        self.description = description
+        self.itemTypeId = (itemTypeId == nil) ? 0 : itemTypeId!
+        self.frequency = (frequency == nil) ? "" : frequency!
+        self.quantity = (quantity == nil) ? 0 : quantity!
+        self.durationInDays = (durationInDays == nil) ? 0 : durationInDays!
+        self.description = (description == nil) ? "" : description!
         self.createdAt = dateFormatter.string(from: createdAt)
     }
     
-    public init(id: Int, prescriptionId: Int, itemTypeId: Int, frequency: String, quantity: Int, durationInDays: Int, description: String, createdAt: String) {
+    public init(id: Int, prescriptionId: Int, itemTypeId: Int?, frequency: String?, quantity: Int?, durationInDays: Int?, description: String?, createdAt: String) {
         self.dateFormatter = DateFormatter()
+        self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
+        self.dateFormatter.timeStyle = .medium
+        self.dateFormatter.dateStyle = .long
         
         self.id = id
         self.prescriptionId = prescriptionId
-        self.itemTypeId = itemTypeId
-        self.frequency = frequency
-        self.quantity = quantity
-        self.durationInDays = durationInDays
-        self.description = description
+        self.itemTypeId = (itemTypeId == nil) ? 0 : itemTypeId!
+        self.frequency = (frequency == nil) ? "" : frequency!
+        self.quantity = (quantity == nil) ? 0 : quantity!
+        self.durationInDays = (durationInDays == nil) ? 0 : durationInDays!
+        self.description = (description == nil) ? "" : description!
         self.createdAt = createdAt
     }
     

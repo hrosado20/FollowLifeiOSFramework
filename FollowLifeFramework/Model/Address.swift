@@ -38,7 +38,7 @@ public class Address {
         self.updatedAt = dateFormatter.string(from: Date())
     }
     
-    public init(id: Int, districtId: Int, street: String, neighborhood: String, complement: String, number: String, status: String, createdAt: Date, updatedAt: Date) {
+    public init(id: Int, districtId: Int, street: String, neighborhood: String, complement: String?, number: String, status: String, createdAt: Date, updatedAt: Date) {
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         self.dateFormatter.timeStyle = .medium
@@ -48,21 +48,21 @@ public class Address {
         self.districtId = districtId
         self.street = street
         self.neighborhood = neighborhood
-        self.complement = complement
+        self.complement = (complement == nil) ? "" : complement!
         self.number = number
         self.status = status
         self.createdAt = dateFormatter.string(from: createdAt)
         self.updatedAt = dateFormatter.string(from: updatedAt)
     }
     
-    public init(id: Int, districtId: Int, street: String, neighborhood: String, complement: String, number: String, status: String, createdAt: String, updatedAt: String) {
+    public init(id: Int, districtId: Int, street: String, neighborhood: String, complement: String?, number: String, status: String, createdAt: String, updatedAt: String) {
         self.dateFormatter = DateFormatter()
         
         self.id = id
         self.districtId = districtId
         self.street = street
         self.neighborhood = neighborhood
-        self.complement = complement
+        self.complement = (complement == nil) ? "" : complement!
         self.number = number
         self.status = status
         self.createdAt = createdAt

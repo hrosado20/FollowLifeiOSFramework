@@ -42,7 +42,7 @@ public class Patient {
         self.height = Float("0.0000")!
     }
     
-    public init(id: Int, userId: Int,  planId: Int, createdAt: Date, status: String, updatedAt: Date, age: String, bloodType: String, weight: Float, sex: String, height: Float) {
+    public init(id: Int, userId: Int,  planId: Int?, createdAt: Date, status: String, updatedAt: Date, age: String?, bloodType: String?, weight: Float?, sex: String?, height: Float?) {
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         self.dateFormatter.timeStyle = .medium
@@ -50,31 +50,31 @@ public class Patient {
         
         self.id = id
         self.userId = userId
-        self.planId = planId
+        self.planId = (planId == nil) ? 0 : planId!
         self.createdAt = dateFormatter.string(from: createdAt)
         self.status = status
         self.updatedAt = dateFormatter.string(from: updatedAt)
-        self.age = age
-        self.bloodType = bloodType
-        self.weight = weight
-        self.sex = sex
-        self.height = height
+        self.age = (age == nil) ? "" : age!
+        self.bloodType = (bloodType == nil) ? "" : bloodType!
+        self.weight = (weight == nil) ? Float("0.0000")! : weight!
+        self.sex = (sex == nil) ? "" : sex!
+        self.height = (height == nil) ? Float("0.0000")! : height!
     }
     
-    public init(id: Int, userId: Int,  planId: Int, createdAt: String, status: String, updatedAt: String, age: String, bloodType: String, weight: Float, sex: String, height: Float) {
+    public init(id: Int, userId: Int,  planId: Int?, createdAt: String, status: String, updatedAt: String, age: String?, bloodType: String?, weight: Float?, sex: String?, height: Float?) {
         self.dateFormatter = DateFormatter()
         
         self.id = id
         self.userId = userId
-        self.planId = planId
+        self.planId = (planId == nil) ? 0 : planId!
         self.createdAt = createdAt
         self.status = status
         self.updatedAt = updatedAt
-        self.age = age
-        self.bloodType = bloodType
-        self.weight = weight
-        self.sex = sex
-        self.height = height
+        self.age = (age == nil) ? "" : age!
+        self.bloodType = (bloodType == nil) ? "" : bloodType!
+        self.weight = (weight == nil) ? Float("0.0000")! : weight!
+        self.sex = (sex == nil) ? "" : sex!
+        self.height = (height == nil) ? Float("0.0000")! : height!
     }
     
     public init(from jsonObject: JSON){

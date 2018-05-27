@@ -46,7 +46,7 @@ public class User {
         self.updatedOn = dateFormatter.string(from: Date())
     }
     
-    public init(id: Int, email: String, password: String, roleId: Int, firstName: String, lastName: String, status: String, phoneNumber: String, profilePicture: String, sessionToken: String, lastIPConnection: String, createdAt: Date, updatedOn: Date) {
+    public init(id: Int, email: String, password: String, roleId: Int, firstName: String, lastName: String, status: String, phoneNumber: String?, profilePicture: String?, sessionToken: String?, lastIPConnection: String?, createdAt: Date, updatedOn: Date?) {
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         self.dateFormatter.timeStyle = .medium
@@ -59,15 +59,15 @@ public class User {
         self.firstName = firstName
         self.lastName = lastName
         self.status = status
-        self.phoneNumber = phoneNumber
-        self.profilePicture = profilePicture
-        self.sessionToken = sessionToken
-        self.lastIPConnection = lastIPConnection
+        self.phoneNumber = (phoneNumber == nil) ? "" : phoneNumber!
+        self.profilePicture = (profilePicture == nil) ? "" : profilePicture!
+        self.sessionToken = (sessionToken == nil) ? "" : sessionToken!
+        self.lastIPConnection = (lastIPConnection == nil) ? "" : lastIPConnection!
         self.createdAt = dateFormatter.string(from: createdAt)
-        self.updatedOn = dateFormatter.string(from: updatedOn)
+        self.updatedOn = (updatedOn == nil) ? dateFormatter.string(from: Date()) : dateFormatter.string(from: updatedOn!)
     }
     
-    public init(id: Int, email: String, password: String, roleId: Int, firstName: String, lastName: String, status: String, phoneNumber: String, profilePicture: String, sessionToken: String, lastIPConnection: String, createdAt: String, updatedOn: String) {
+    public init(id: Int, email: String, password: String, roleId: Int, firstName: String, lastName: String, status: String, phoneNumber: String?, profilePicture: String?, sessionToken: String?, lastIPConnection: String?, createdAt: String, updatedOn: String?) {
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         self.dateFormatter.timeStyle = .medium
@@ -80,12 +80,12 @@ public class User {
         self.firstName = firstName
         self.lastName = lastName
         self.status = status
-        self.phoneNumber = phoneNumber
-        self.profilePicture = profilePicture
-        self.sessionToken = sessionToken
-        self.lastIPConnection = lastIPConnection
+        self.phoneNumber = (phoneNumber == nil) ? "" : phoneNumber!
+        self.profilePicture = (profilePicture == nil) ? "" : profilePicture!
+        self.sessionToken = (sessionToken == nil) ? "" : sessionToken!
+        self.lastIPConnection = (lastIPConnection == nil) ? "" : lastIPConnection!
         self.createdAt = createdAt
-        self.updatedOn = updatedOn
+        self.updatedOn = (updatedOn == nil) ? dateFormatter.string(from: Date()) : updatedOn!
     }
     
     public init(from jsonObject: JSON){

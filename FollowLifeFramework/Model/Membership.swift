@@ -36,7 +36,7 @@ public class Membership {
         self.status = ""
     }
     
-    public init(id: Int, doctorId: Int, patientId: Int, referenceEmail: String, token: String, createdAt: Date, expiresAt: Date, status: String) {
+    public init(id: Int, doctorId: Int, patientId: Int?, referenceEmail: String, token: String, createdAt: Date, expiresAt: Date, status: String) {
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         self.dateFormatter.timeStyle = .medium
@@ -44,7 +44,7 @@ public class Membership {
         
         self.id = id
         self.doctorId = doctorId
-        self.patientId = patientId
+        self.patientId = (patientId == nil) ? 0 : patientId!
         self.referenceEmail = referenceEmail
         self.token = token
         self.createdAt = dateFormatter.string(from: createdAt)
@@ -52,7 +52,7 @@ public class Membership {
         self.status = status
     }
     
-    public init(id: Int, doctorId: Int, patientId: Int, referenceEmail: String, token: String, createdAt: String, expiresAt: String, status: String) {
+    public init(id: Int, doctorId: Int, patientId: Int?, referenceEmail: String, token: String, createdAt: String, expiresAt: String, status: String) {
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         self.dateFormatter.timeStyle = .medium
@@ -60,7 +60,7 @@ public class Membership {
         
         self.id = id
         self.doctorId = doctorId
-        self.patientId = patientId
+        self.patientId = (patientId == nil) ? 0 : patientId!
         self.referenceEmail = referenceEmail
         self.token = token
         self.createdAt = createdAt

@@ -38,35 +38,38 @@ public class Appointment {
         self.updatedAt = dateFormatter.string(from: Date())
     }
     
-    public init(id: Int, patientId: Int, doctorId: Int, createdAt: Date, appointmentDate: Date, canceledAt: Date, reason: String, status: String, updatedAt: Date) {
+    public init(id: Int, patientId: Int?, doctorId: Int?, createdAt: Date, appointmentDate: Date, canceledAt: Date?, reason: String?, status: String, updatedAt: Date?) {
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
         self.dateFormatter.timeStyle = .medium
         self.dateFormatter.dateStyle = .long
         
         self.id = id
-        self.patientId = patientId
-        self.doctorId = doctorId
+        self.patientId = (patientId == nil) ? 0 : patientId!
+        self.doctorId = (doctorId == nil) ? 0 : doctorId!
         self.createdAt = dateFormatter.string(from: createdAt)
         self.appointmentDate = dateFormatter.string(from: appointmentDate)
-        self.canceledAt = dateFormatter.string(from: canceledAt)
-        self.reason = reason
+        self.canceledAt = (canceledAt == nil) ? dateFormatter.string(from: Date()) : dateFormatter.string(from: canceledAt!)
+        self.reason = (reason == nil) ? "" : reason!
         self.status = status
-        self.updatedAt = dateFormatter.string(from: updatedAt)
+        self.updatedAt = (updatedAt == nil) ? dateFormatter.string(from: Date()) : dateFormatter.string(from: updatedAt!)
     }
     
-    public init(id: Int, patientId: Int, doctorId: Int, createdAt: String, appointmentDate: String, canceledAt: String, reason: String, status: String, updatedAt: String) {
+    public init(id: Int, patientId: Int?, doctorId: Int?, createdAt: String, appointmentDate: String, canceledAt: String?, reason: String?, status: String, updatedAt: String?) {
         self.dateFormatter = DateFormatter()
+        self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
+        self.dateFormatter.timeStyle = .medium
+        self.dateFormatter.dateStyle = .long
         
         self.id = id
-        self.patientId = patientId
-        self.doctorId = doctorId
+        self.patientId = (patientId == nil) ? 0 : patientId!
+        self.doctorId = (doctorId == nil) ? 0 : doctorId!
         self.createdAt = createdAt
         self.appointmentDate = appointmentDate
-        self.canceledAt = canceledAt
-        self.reason = reason
+        self.canceledAt = (canceledAt == nil) ? dateFormatter.string(from: Date()) : canceledAt!
+        self.reason = (reason == nil) ? "" : reason!
         self.status = status
-        self.updatedAt = updatedAt
+        self.updatedAt = (updatedAt == nil) ? dateFormatter.string(from: Date()) : updatedAt!
     }
     
     public init(from jsonObject: JSON){
