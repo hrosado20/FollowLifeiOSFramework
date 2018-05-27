@@ -12,11 +12,11 @@ public class FollowLifeApi {
     private static let baseUrl: String = "www.followlife.me"
     
     public static var doctorsUrl: String {
-        return "\(baseUrl)/api/v1/doctor"
+        return "\(baseUrl)/api/v1/doctors"
     }
     
     public static var patientsUrl: String {
-        return "\(baseUrl)/api/v1/patient"
+        return "\(baseUrl)/api/v1/patients"
     }
     
     public static var repositoriesUrl: String {
