@@ -15,7 +15,7 @@ public class Preference {
         preferences = UserDefaults.standard
     }
     
-    func saveData(key: String, value: String) {
+    public func saveData(key: String, value: String) {
         preferences.set(value, forKey: key)
         
         let didSave = preferences.synchronize()
@@ -25,13 +25,13 @@ public class Preference {
         }
     }
     
-    func retreiveData(key: String) -> String {
+    public func retreiveData(key: String) -> String {
         let value: String = preferences.string(forKey: key)!
         
         return value
     }
     
-    func retreiveData(key: String) -> Int {
+    public func retreiveData(key: String) -> Int {
         let value: Int = preferences.integer(forKey: key)
         
         return value
