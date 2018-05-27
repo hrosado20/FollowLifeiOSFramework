@@ -9,7 +9,7 @@
 import Foundation
 
 public class FollowLifeApi {
-    private static let baseUrl: String = "www.followlife.me"
+    private static let baseUrl: String = "https://www.followlife.me"
     
     public static var doctorsUrl: String {
         return "\(baseUrl)/api/v1/doctors"
