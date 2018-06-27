@@ -16,7 +16,7 @@
 		40DB0BF420B91CF200A3AB2D /* FollowLifeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB0BF220B91CF200A3AB2D /* FollowLifeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40DB0C1020B91D5C00A3AB2D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFD20B91D5B00A3AB2D /* Patient.swift */; };
 		40DB0C1220B91D5C00A3AB2D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFF20B91D5B00A3AB2D /* Item.swift */; };
-		40DB0C1320B91D5C00A3AB2D /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0020B91D5B00A3AB2D /* ItemType.swift */; };
+		40DB0C1320B91D5C00A3AB2D /* PrescriptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0020B91D5B00A3AB2D /* PrescriptionType.swift */; };
 		40DB0C1420B91D5C00A3AB2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0120B91D5B00A3AB2D /* User.swift */; };
 		40DB0C1520B91D5C00A3AB2D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0220B91D5C00A3AB2D /* Address.swift */; };
 		40DB0C1720B91D5C00A3AB2D /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0420B91D5C00A3AB2D /* Indicator.swift */; };
@@ -55,8 +55,8 @@
 		40DB0C8B20B91F2500A3AB2D /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0C20B91D5C00A3AB2D /* IndicatorType.swift */; };
 		40DB0C8C20B91F2900A3AB2D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFF20B91D5B00A3AB2D /* Item.swift */; };
 		40DB0C8D20B91F2900A3AB2D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFF20B91D5B00A3AB2D /* Item.swift */; };
-		40DB0C8E20B91F2D00A3AB2D /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0020B91D5B00A3AB2D /* ItemType.swift */; };
-		40DB0C8F20B91F2E00A3AB2D /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0020B91D5B00A3AB2D /* ItemType.swift */; };
+		40DB0C8E20B91F2D00A3AB2D /* PrescriptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0020B91D5B00A3AB2D /* PrescriptionType.swift */; };
+		40DB0C8F20B91F2E00A3AB2D /* PrescriptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0020B91D5B00A3AB2D /* PrescriptionType.swift */; };
 		40DB0C9020B91F3200A3AB2D /* MedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0720B91D5C00A3AB2D /* MedicalSpeciality.swift */; };
 		40DB0C9120B91F3300A3AB2D /* MedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0720B91D5C00A3AB2D /* MedicalSpeciality.swift */; };
 		40DB0C9420B91F3E00A3AB2D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFD20B91D5B00A3AB2D /* Patient.swift */; };
@@ -187,7 +187,7 @@
 		40DB0BF320B91CF200A3AB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40DB0BFD20B91D5B00A3AB2D /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		40DB0BFF20B91D5B00A3AB2D /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		40DB0C0020B91D5B00A3AB2D /* ItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
+		40DB0C0020B91D5B00A3AB2D /* PrescriptionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionType.swift; sourceTree = "<group>"; };
 		40DB0C0120B91D5B00A3AB2D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		40DB0C0220B91D5C00A3AB2D /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		40DB0C0420B91D5C00A3AB2D /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 				40DB0C0520B91D5C00A3AB2D /* IndicatorEntry.swift */,
 				40DB0C0C20B91D5C00A3AB2D /* IndicatorType.swift */,
 				40DB0BFF20B91D5B00A3AB2D /* Item.swift */,
-				40DB0C0020B91D5B00A3AB2D /* ItemType.swift */,
+				40DB0C0020B91D5B00A3AB2D /* PrescriptionType.swift */,
 				40DB0C0720B91D5C00A3AB2D /* MedicalSpeciality.swift */,
 				40DB0BFD20B91D5B00A3AB2D /* Patient.swift */,
 				40DB0C0920B91D5C00A3AB2D /* Plan.swift */,
@@ -645,7 +645,7 @@
 				40DB0C1A20B91D5C00A3AB2D /* MedicalSpeciality.swift in Sources */,
 				40DB0C1F20B91D5C00A3AB2D /* IndicatorType.swift in Sources */,
 				4009375920B9AC6700BF359A /* Preference.swift in Sources */,
-				40DB0C1320B91D5C00A3AB2D /* ItemType.swift in Sources */,
+				40DB0C1320B91D5C00A3AB2D /* PrescriptionType.swift in Sources */,
 				40DB0C1920B91D5C00A3AB2D /* UnitOfMeasurement.swift in Sources */,
 				40DB0C1820B91D5C00A3AB2D /* IndicatorEntry.swift in Sources */,
 				40DB0C1020B91D5C00A3AB2D /* Patient.swift in Sources */,
@@ -672,7 +672,7 @@
 				40DB0C8220B91F0F00A3AB2D /* Doctor.swift in Sources */,
 				4009375A20B9AC6700BF359A /* Preference.swift in Sources */,
 				40DB0C7920B91EEB00A3AB2D /* Address.swift in Sources */,
-				40DB0C8E20B91F2D00A3AB2D /* ItemType.swift in Sources */,
+				40DB0C8E20B91F2D00A3AB2D /* PrescriptionType.swift in Sources */,
 				40DB0C7C20B91EFF00A3AB2D /* Appointment.swift in Sources */,
 				40DB0C9420B91F3E00A3AB2D /* Patient.swift in Sources */,
 				4009378B20BC959100BF359A /* Utils.swift in Sources */,
@@ -699,7 +699,7 @@
 				40DB0C8320B91F1000A3AB2D /* Doctor.swift in Sources */,
 				4009375B20B9AC6700BF359A /* Preference.swift in Sources */,
 				40DB0C7A20B91EEC00A3AB2D /* Address.swift in Sources */,
-				40DB0C8F20B91F2E00A3AB2D /* ItemType.swift in Sources */,
+				40DB0C8F20B91F2E00A3AB2D /* PrescriptionType.swift in Sources */,
 				40DB0C7D20B91EFF00A3AB2D /* Appointment.swift in Sources */,
 				40DB0C9520B91F3E00A3AB2D /* Patient.swift in Sources */,
 				4009378C20BC959100BF359A /* Utils.swift in Sources */,

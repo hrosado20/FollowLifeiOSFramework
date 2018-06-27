@@ -10,56 +10,72 @@ import SwiftyJSON
 
 public class Item {
     public var id: Int
-    public var prescriptionId: Int
-    public var itemTypeId: Int
+    public var doctorId: Int
+    public var prescriptionTypeId: PrescriptionType
     public var frequency: String
     public var quantity: Int
     public var durationInDays: Int
     public var description: String
-    public var createdAt: String
+    public var patientId: Int
+    public var startedAt: String
+    public var finishedAt: String
+    public var status: String
     
     public init() {
         self.id = 0
-        self.prescriptionId = 0
-        self.itemTypeId = 0
+        self.doctorId = 0
+        self.prescriptionTypeId = PrescriptionType.init()
         self.frequency = ""
         self.quantity = 0
         self.durationInDays = 0
         self.description = ""
-        self.createdAt = Utils.getTimeNow()
+        self.patientId = 0
+        self.startedAt = Utils.getTimeNow()
+        self.finishedAt = Utils.getTimeNow()
+        self.status = ""
     }
     
-    public init(id: Int, prescriptionId: Int, itemTypeId: Int?, frequency: String?, quantity: Int?, durationInDays: Int?, description: String?, createdAt: Date) {
+    public init(id: Int, doctorId: Int, prescriptionTypeId: PrescriptionType?, frequency: String?, quantity: Int?, durationInDays: Int?, description: String?, patientId: Int, startedAt: Date, finishedAt: Date?, status: String?) {
         self.id = id
-        self.prescriptionId = prescriptionId
-        self.itemTypeId = (itemTypeId == nil) ? 0 : itemTypeId!
+        self.doctorId = 0
+        self.prescriptionTypeId = (prescriptionTypeId == nil) ? PrescriptionType.init() : prescriptionTypeId!
         self.frequency = (frequency == nil) ? "" : frequency!
         self.quantity = (quantity == nil) ? 0 : quantity!
         self.durationInDays = (durationInDays == nil) ? 0 : durationInDays!
         self.description = (description == nil) ? "" : description!
-        self.createdAt = Utils.convertTime(from: createdAt)
+        self.startedAt = Utils.convertTime(from: startedAt)
+        self.patientId = 0
+        self.finishedAt = (finishedAt == nil) ? Utils.getTimeNow() : Utils.convertTime(from: finishedAt)
+        self.status = (status == nil) ? "" : status!
     }
     
-    public init(id: Int, prescriptionId: Int, itemTypeId: Int?, frequency: String?, quantity: Int?, durationInDays: Int?, description: String?, createdAt: String) {
+    
+    public init(id: Int, doctorId: Int, prescriptionTypeId: PrescriptionType?, frequency: String?, quantity: Int?, durationInDays: Int?, description: String?, patientId: Int, startedAt: String, finishedAt: String?, status: String?) {
         self.id = id
-        self.prescriptionId = prescriptionId
-        self.itemTypeId = (itemTypeId == nil) ? 0 : itemTypeId!
+        self.doctorId = 0
+        self.prescriptionTypeId = (prescriptionTypeId == nil) ? PrescriptionType.init() : prescriptionTypeId!
         self.frequency = (frequency == nil) ? "" : frequency!
         self.quantity = (quantity == nil) ? 0 : quantity!
         self.durationInDays = (durationInDays == nil) ? 0 : durationInDays!
         self.description = (description == nil) ? "" : description!
-        self.createdAt = createdAt
+        self.startedAt = startedAt
+        self.patientId = 0
+        self.finishedAt = (finishedAt == nil) ? Utils.getTimeNow() : finishedAt!
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(from jsonObject: JSON) {
         self.init(id: jsonObject["id"].intValue,
-                  prescriptionId: jsonObject["prescriptionId"].intValue,
-                  itemTypeId: jsonObject["itemTypeId"].intValue,
+                  doctorId: jsonObject["doctorId"].intValue,
+                  prescriptionTypeId: PrescriptionType.init(from: jsonObject["prescriptionType"]),
                   frequency: jsonObject["frequency"].stringValue,
                   quantity: jsonObject["quantity"].intValue,
                   durationInDays: jsonObject["durationInDays"].intValue,
                   description: jsonObject["description"].stringValue,
-                  createdAt: jsonObject["createdAt"].stringValue)
+                  patientId: jsonObject["patientId"].intValue,
+                  startedAt: jsonObject["startedAt"].stringValue,
+                  finishedAt: jsonObject["finishedAt"].stringValue,
+                  status: jsonObject["status"].stringValue)
     }
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [Item] {

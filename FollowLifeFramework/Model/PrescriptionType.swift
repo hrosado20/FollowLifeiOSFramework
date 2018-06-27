@@ -8,7 +8,7 @@
 import Foundation
 import SwiftyJSON
 
-public class ItemType {
+public class PrescriptionType {
     public var id: Int
     public var name: String
     public var code: String
@@ -31,11 +31,11 @@ public class ItemType {
                   code: jsonObject["Code"].stringValue)
     }
     
-    public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [ItemType] {
-        var itemsType = [ItemType]()
+    public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [PrescriptionType] {
+        var itemsType = [PrescriptionType]()
         let count = jsonArray.count
         for i in 0..<count {
-            itemsType.append(ItemType.init(from: jsonArray[i]))
+            itemsType.append(PrescriptionType.init(from: jsonArray[i]))
         }
         return itemsType
     }
