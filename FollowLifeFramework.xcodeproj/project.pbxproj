@@ -73,6 +73,9 @@
 		40DB0CA120B91F5C00A3AB2D /* FollowLifeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C2220B91D7B00A3AB2D /* FollowLifeApi.swift */; };
 		40DB0CA220B91F6000A3AB2D /* LogoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C2320B91D7B00A3AB2D /* LogoApi.swift */; };
 		40DB0CA320B91F6100A3AB2D /* LogoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C2320B91D7B00A3AB2D /* LogoApi.swift */; };
+		40FCE1D820E35A78000E6F52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FCE1D720E35A78000E6F52 /* Constants.swift */; };
+		40FCE1D920E35A78000E6F52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FCE1D720E35A78000E6F52 /* Constants.swift */; };
+		40FCE1DA20E35A78000E6F52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FCE1D720E35A78000E6F52 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +210,7 @@
 		40DB0C6D20B91EBF00A3AB2D /* FollowLifeTVFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FollowLifeTVFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DB0C6F20B91EBF00A3AB2D /* FollowLifeTVFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowLifeTVFramework.h; sourceTree = "<group>"; };
 		40DB0C7020B91EBF00A3AB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40FCE1D720E35A78000E6F52 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +249,7 @@
 			children = (
 				4009375820B9AC6700BF359A /* Preference.swift */,
 				4009378920BC959100BF359A /* Utils.swift */,
+				40FCE1D720E35A78000E6F52 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -647,6 +652,7 @@
 				4009378A20BC959100BF359A /* Utils.swift in Sources */,
 				40DB0C1720B91D5C00A3AB2D /* Indicator.swift in Sources */,
 				40DB0C2520B91D7B00A3AB2D /* LogoApi.swift in Sources */,
+				40FCE1D820E35A78000E6F52 /* Constants.swift in Sources */,
 				40DB0C2020B91D5C00A3AB2D /* Doctor.swift in Sources */,
 				40DB0C1520B91D5C00A3AB2D /* Address.swift in Sources */,
 				40DB0C1E20B91D5C00A3AB2D /* Prescription.swift in Sources */,
@@ -673,6 +679,7 @@
 				40DB0C8820B91F1F00A3AB2D /* IndicatorEntry.swift in Sources */,
 				40DB0CA220B91F6000A3AB2D /* LogoApi.swift in Sources */,
 				40DB0C8020B91F0A00A3AB2D /* District.swift in Sources */,
+				40FCE1D920E35A78000E6F52 /* Constants.swift in Sources */,
 				40DB0C9620B91F4300A3AB2D /* Plan.swift in Sources */,
 				40DB0C9820B91F4800A3AB2D /* Prescription.swift in Sources */,
 				40DB0C9E20B91F5700A3AB2D /* User.swift in Sources */,
@@ -699,6 +706,7 @@
 				40DB0C8920B91F2000A3AB2D /* IndicatorEntry.swift in Sources */,
 				40DB0CA320B91F6100A3AB2D /* LogoApi.swift in Sources */,
 				40DB0C8120B91F0B00A3AB2D /* District.swift in Sources */,
+				40FCE1DA20E35A78000E6F52 /* Constants.swift in Sources */,
 				40DB0C9720B91F4400A3AB2D /* Plan.swift in Sources */,
 				40DB0C9920B91F4900A3AB2D /* Prescription.swift in Sources */,
 				40DB0C9F20B91F5800A3AB2D /* User.swift in Sources */,
